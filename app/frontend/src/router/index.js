@@ -37,7 +37,7 @@ const router = createRouter({
     {
       path: '/ar',
       name: 'ar',
-      component: () => import('../views/AView.vue')
+      component: () => import('../views/SubmissionsView.vue')
     }
   ]
 })
