@@ -7,20 +7,4 @@
         </p>
     </v-container>
 </template>
-  
-<script setup>
-import { onMounted } from 'vue'
-import { APP_URL } from "@/constants";
-import { useRoute } from 'vue-router'
-onMounted(() => {
-    // Get a dictionary of parameters in the redirect response URL
-    const route = useRoute();
-    
-    // window.opener references our original window from where the login popup was opened
-    window.opener.postMessage(
-        route.query,
-        APP_URL // Important security measure: https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy
-    );
-    window.close();
-});
-</script>
+
