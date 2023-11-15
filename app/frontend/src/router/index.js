@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HelpView from '../views/HelpView.vue'
 import MapView from '../views/MapView.vue'
 import ApiView from '../views/ApiView.vue'
+import AView from '../views/AView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -37,7 +38,7 @@ const router = createRouter({
     {
       path: '/ar',
       name: 'ar',
-      component: () => import('../views/SubmissionsView.vue')
+      component: AView
     }
   ]
 })
