@@ -38,7 +38,7 @@ const router = createRouter({
     {
       path: '/ar',
       name: 'ar',
-      component: () => import('../views/AuthRedirectView.vue')
+      component: () => import('../views/AView.vue')
     }
   ]
 })
